@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;    
+    border: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(3, 34, 52);       
+}
+
+/* CABEÇALHO */
+header {      
+    background-color: black;
+    height: 400px;     
+    border-bottom: 1px solid goldenrod;        
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;    
+} 
+a {
+    color: white;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+/* MENU */
+header > nav {
+    position: fixed;    
+    width: 100%;
+    height: 40px;    
+    border-bottom: 1px solid goldenrod;
+    border-top: 1px solid goldenrod;  
+    background-color: black;
+    /* background-image: linear-gradient(to bottom, rgb(3, 34, 52), rgb(4, 49, 75),rgb(18, 76, 112));     */
+}
+nav > ul {      
+    display: flex;
+    width: 1100px;
+    height: 37px;
+    margin: auto;    
+    border-left: 1px solid goldenrod;         
+}
+
+/* MENU ITENS */
+nav > ul > li {     
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+    width: 220px;
+    border-right: 1px solid goldenrod;
+}
+
+/* SUB MENU */
+#submenu {
+    position: absolute;
+    width: 220px;
+    top: 38px;
+    text-align: center;    
+    background-color: rgba(18, 76, 112, 0.63);    
+    border-right: 1px solid goldenrod;
+    border-left:1px solid goldenrod;
+    border-bottom: 1px solid goldenrod; 
+    display: none;
+}
+#submenu li {
+    padding: 5px;
+}
+li:hover {
+    background-color: rgba(255, 255, 255, 0.515) !important;    
+    font-weight: bold !important;    
+}
+li:hover #submenu {
+    display: block;
+}
+
+/* IMAGEM CABEÇALHO*/
+header > div#imagem {
+    height: 399px; 
+    width: 1100px;  
+    margin: auto; 
+    background-image: url('imagens/logo_drahktar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+/* TEXT CABEÇALHO */
+header > div > p { 
+    position: relative;
+    top: 63%;
+    left: 34%;           
+    color: rgb(179, 161, 115);       
+    font-size: 1.7em; 
+    font-style: oblique;    
+}
+
+/* CONTEÚDO */
+main {
+    display: flex;
+    flex-direction: column;    
+    width: 900px;    
+    margin: auto;    
+    border-radius: 10px;
+}
+main > h2 {
+    color: whitesmoke;
+    font-size: 2em;    
+    padding: 10px;    
+    margin: 50px;      
+    border-bottom: 1px solid goldenrod;
+    border-radius: 0px 0px 20px 0px;
+}
+div#new_album {
+    background-image: url('imagens/pexels-johannes-plenio-1119976.jpg');
+    background-size: cover;    
+    border-radius: 0px 0px 20px 20px;
+}
+img {
+    border: 2px solid goldenrod;
+}
+div#new_album > h2 {    
+    font-size: 3.5em;
+    text-align: center;
+    text-shadow: 1px 1px 5px black;
+    color: goldenrod;    
+    padding-top: 50px;    
+}
+div#spotify {
+    background: url('imagens/PngItem_520584.png'), rgb(3, 34, 52);
+    background-size: cover; 
+    border-radius: 20px;
+}
+div#video {
+    background: url('imagens/PngItem_520584.png'), rgb(3, 34, 52);
+    background-size: cover;  
+    border-radius: 20px;
+}
+div.conteudo {
+    display: flex;
+    justify-content: center;        
+    padding: 50px;            
+}
+div#merchan {
+    display: flex;
+    justify-content: center;
+    background-image: url('imagens/drahktar_merchan.jpg');
+    background-size: cover;    
+    height: 700px;
+}
+div#biografia {
+    background: url('imagens/PngItem_520584.png'), rgb(3, 34, 52);
+    background-size: cover;  
+    display: flex;
+    flex-direction: row;
+    text-indent: 40px;
+    color: black;
+    font-size: 1.5em;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+}
+div#biografia > p {
+    text-align: justify;  
+    line-height: 1.5em;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* RODAPÉ */
+footer {    
+    background-color: black;
+    display: flex;
+    border-top: 1px solid goldenrod;
+    height: 100px;    
+}
+div.rodape > h2 {
+    color: white;
+    font-size: 1.8em;
+    padding: 10px;
+}
+div#sociais {
+    position: relative;
+    float: left;
+    width: 50%;
+    text-align: center;    
+}
+div#contato {
+    position: relative;
+    float: right;
+    width: 50%;
+    text-align: center;
+}
+div#sociais > a > i { 
+    background-color: white;
+    color: rgb(18, 76, 112);   
+    font-size: 1.8em;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+div#contato > p {
+    color: white;
+    font-size: 1.5em;
+}
+div#contato > p > i {
+    background-color: white;
+    color: rgb(18, 76, 112);
+    font-size: 1em; 
+    margin: 5px;   
+    padding: 5px;
+    border-radius: 5px;
+}
+body > h2 {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+}
